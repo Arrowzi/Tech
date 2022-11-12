@@ -4,12 +4,13 @@
   "private": true,
   "license": "MIT",
   "source": "public/index.html",
-  "homepage": "https://meshok-maker.github.io/ModernComputerTech/",
+  "homepage": "https://arrowzi.github.io/Tech/",
   "scripts": {
     "start": "parcel serve --open",
-    "build": "parcel build public/index.html --public-url https://meshok-maker.github.io/ModernComputerTech/",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "yarn build"
+    "build": "parcel build public/index.html --public-url https://arrowzi.github.io/Tech/",
+    "clean": "rimraf dist",
+    "deploy": "npm run clean && gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -30,6 +31,7 @@
     "@types/styled-components": "^5.1.26",
     "parcel": "^2.7.0",
     "process": "^0.11.10",
+    "rimraf": "^3.0.2",
     "typescript": "^4.8.4"
   }
 }

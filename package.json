@@ -9,8 +9,8 @@
     "start": "parcel serve --open",
     "build": "parcel build public/index.html --public-url https://arrowzi.github.io/Tech/",
     "clean": "rimraf dist",
-    "deploy": "npm run clean && gh-pages -d dist",
-    "predeploy": "npm run build"
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run clean && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",

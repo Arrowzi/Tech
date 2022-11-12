@@ -2,7 +2,8 @@ export type Quest = {
     id: number,
     title: string,
     variants: string[],
-    correctVariant: number
+    correctVariant: number,
+    img: string
 };
 
 export type FunProps = {

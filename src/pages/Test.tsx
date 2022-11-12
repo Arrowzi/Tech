@@ -22,7 +22,7 @@ const Test = () => {
                     <Grid container spacing={2}>
                         {/* Item 1*/}
                         <Grid item xs={12}>
-                            <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column', height: 600 }}>
+                            <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column', height: 900 }}>
                                 <Typography align="center" variant="h3" gutterBottom>
                                     Тесты
                                 </Typography>

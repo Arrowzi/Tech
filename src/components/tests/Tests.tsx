@@ -1,4 +1,4 @@
-import { List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
+import { Box, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
 import React, { useState, FC } from 'react';
 import { FunProps, Quest, ResultProps, StepProps } from '../../Types/Types';
 import { AllQuest } from './AllQuest';
@@ -10,12 +10,15 @@ const Result = ({ correctVar }: ResultProps) => (
         <Typography variant='body1'>Ваша оценка {Math.round(Math.max((correctVar / AllQuest.length) * 5, 2))}</Typography>
     </div>
 )
-const ViewTest: FC<Quest & FunProps & StepProps> = ({ title, variants, onClickVar, step }) => {
+const ViewTest: FC<Quest & FunProps & StepProps> = ({ img, title, variants, onClickVar, step }) => {
     return (
         <div>
             <Typography align='center' variant='h4'>{title}</Typography>
+            <Box alignItems="center" flexDirection="column" display="flex">
+                <img src={img} alt={title} style={{height:"400px", width: "auto"}}/>
+            </Box>       
             <List>
-                {variants.map((text, index) => (
+                {variants.map((text, index) => (  
                     <ListItem divider onClick={() => onClickVar(index)} key={text}>
                         <ListItemButton>
                             <ListItemText primary={text}></ListItemText>

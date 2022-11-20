@@ -17,7 +17,7 @@ export const AllQuest: Quest[] = [
     },
     {
         id: 2,
-        img: "https://4.bp.blogspot.com/-MVZUIAB40w8/WdQEoJSKKvI/AAAAAAAAEVs/33eFTa-C8Bgbc7-3ZNIJaKI1E7nNTCYWACLcBGAs/s1600/_37A9943.jpg",
+        img: "https://citifox.ru/wp-content/uploads/2020/06/Screenshot_15-1.jpg",
         title: "В какой из известных опер главной героиней является цыганка?",
         variants: ["“Норма”, Беллини", "“Кармен”, Бизе", "“Аида”, Верди", "“Травиата”, Верди"],
         correctVariant: 1

@@ -26,7 +26,7 @@ const Market = () => {
                         <Grid item xs={12}>
                             <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column', height: 1350 }}>
                                 <Typography align="center" variant="h3" gutterBottom>
-                                    Магазин гаражей
+                                    Музыкальный магазин
                                 </Typography>
                                 <QueryClientProvider client={client}>
                                     <Marketplace />

@@ -1,9 +1,9 @@
 import { Button, FormControl, Input, InputLabel } from "@mui/material";
 import React, { useState } from "react";
 
-const AllImages = ["https://adijuhpalace.ru/800/600/https/n1s1.elle.ru/e4/14/6b/e4146b309f701b7e040b31ca16f58157/1920x1200_0xc35dbb80_17119083041493282650.jpeg",
-    "https://www.mushroomtravel.com/page/wp-content/uploads/2018/10/pixabay-the-eiffel-tower-4104637_1920.jpg",
-    "https://russland-reisen.de/wp-content/uploads/2019/08/Premium-Reisen-Moskau-e1566306865487.jpg"];
+const AllImages = ["https://www.kopiberi.ru/uploads/images/feature_image/screenshot-1-374.jpg",
+    "https://gas-kvas.com/uploads/posts/2022-07/1658594639_1-gas-kvas-com-p-krasivie-foto-goroda-las-vegas-nochyu-1.jpg",
+    "http://i1.wallbox.ru/wallpapers/main2/201726/berlinskij-kafedralnyj-sobor.jpg","https://i.artfile.ru/2048x1365_1068984_[www.ArtFile.ru].jpg"];
 
 
 const Pictures = () => {
@@ -41,7 +41,7 @@ const Pictures = () => {
 
                     <InputLabel htmlFor="first">Номер первой картинки</InputLabel>
 
-                    <Input inputProps={{ min: "0", max: "2" }} type="number" id="first" value={changeble.first} onChange={handleIndexChange} />
+                    <Input inputProps={{ min: "0", max: "3" }} type="number" id="first" value={changeble.first} onChange={handleIndexChange} />
 
 
                 </FormControl>
@@ -50,7 +50,7 @@ const Pictures = () => {
 
                     <InputLabel htmlFor="second">Номер второй картинки</InputLabel>
 
-                    <Input inputProps={{ min: "0", max: "2" }} type="number" id="second" value={changeble.second} onChange={handleIndexChange} />
+                    <Input inputProps={{ min: "0", max: "3" }} type="number" id="second" value={changeble.second} onChange={handleIndexChange} />
 
                 </FormControl>
 

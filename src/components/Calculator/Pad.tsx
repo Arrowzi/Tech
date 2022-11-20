@@ -15,6 +15,7 @@ interface PadProps {
     onMemoryClearButtonClick: () => void
     onMemoryPlusButtonClick: () => void
     onMemoryMinusButtonClick: () => void
+    onSqrt: () =>void
 }
 
 
@@ -26,25 +27,16 @@ export const Pad: FunctionComponent<PadProps> = ({
     onEqualButtonClick,
     onAllClearButtonClick,
     onClearEntryButtonClick,
-    onMemoryRecallButtonClick,
-    onMemoryClearButtonClick,
-    onMemoryPlusButtonClick,
-    onMemoryMinusButtonClick
+    onSqrt
 }) => {
 
     return (
         <Box className='buttonContainer'>
-            <Button className='buttonCalc' onClick={onMemoryRecallButtonClick}>
-                MR
+            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('^')}>
+                x^y
             </Button>
-            <Button className='buttonCalc' onClick={onMemoryClearButtonClick}>
-                MC
-            </Button>
-            <Button className='buttonCalc' onClick={onMemoryPlusButtonClick}>
-                M+
-            </Button>
-            <Button className='buttonCalc' onClick={onMemoryMinusButtonClick}>
-                M-
+            <Button className='buttonCalc' onClick={onSqrt}>
+                Sqrt
             </Button>
             <Button className='buttonCalc' onClick={onAllClearButtonClick}>
                 AC
@@ -55,9 +47,7 @@ export const Pad: FunctionComponent<PadProps> = ({
             <Button className='buttonCalc' onClick={onChangeSignButtonClick}>
                 -/+
             </Button>
-            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('×')}>
-                ×
-            </Button>
+           
 
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(7)}>
                 7
@@ -69,24 +59,24 @@ export const Pad: FunctionComponent<PadProps> = ({
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(9)}>
                 9
             </Button>
-
-            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('÷')}>
-                ÷
+            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('×')}>
+                ×
             </Button>
+
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(4)}>
                 4
             </Button>
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(5)}>
                 5
             </Button>
+            
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(6)}>
                 6
             </Button>
-            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('+')}>
-                +
+            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('÷')}>
+                ÷
             </Button>
-
-
+            
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(1)}>
                 1
             </Button>
@@ -95,6 +85,9 @@ export const Pad: FunctionComponent<PadProps> = ({
             </Button>
             <Button className='buttonCalc' onClick={() => onDigitButtonClick(3)}>
                 3
+            </Button>
+            <Button className='buttonCalc' onClick={() => onOperatorButtonClick('+')}>
+                +
             </Button>
             <Button className='buttonCalc' onClick={() => onOperatorButtonClick('-')}>
                 -

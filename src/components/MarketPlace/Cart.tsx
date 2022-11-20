@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { CartItemType } from '../../Types/Types';
 import { FunctionComponent } from 'react';
 import CartItem from './CartItem';
+import { Box } from '@mui/material';
 
 const Wrapper = styled.aside`
   font-family: Arial, Helvetica, sans-serif;
-  width: 500px;
+  width: 100%;
   padding: 50px;
 `;
 
@@ -29,6 +30,7 @@ const Cart: FunctionComponent<Props> = ({ cartItems, addToCart, removeFromCart }
                     addToCart={addToCart}
                     removeFromCart={removeFromCart}
                 />
+
             ))}
             <h2>Итого: ₽{calculateTotal(cartItems).toFixed(2)}</h2>
         </Wrapper>

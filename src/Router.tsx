@@ -18,10 +18,10 @@ const Router = () => {
                 <Route path="/" element={<About />} />
                 <Route path="/slideshow" element={<SlideShow />} />
                 <Route path="/test" element={<Test />} />
-                {/* <Route path="/city" element={<CityMonuments />} /> */}
-                {/* <Route path="/calculator" element={<Calculator />} /> */}
-                {/* <Route path="/market" element={<Market />} /> */}
-                {/* <Route path="/change" element={<ChangePictures />} /> */}
+                <Route path="/city" element={<CityMonuments />} />
+                <Route path="/calculator" element={<Calculator />} />
+                <Route path="/market" element={<Market />} />
+                <Route path="/change" element={<ChangePictures />} />
 
             </Routes>
         </HashRouter>

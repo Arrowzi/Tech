@@ -28,8 +28,11 @@ export const Calc: FunctionComponent = () => {
                 if (rightOperand === 0) {
                     return false;
                 }
-
                 newResult /= rightOperand;
+                break;
+            case '^':
+               newResult = Math.pow(newResult,rightOperand);
+                break;
         }
         setResult(newResult);
         setDisplay(newResult.toString().toString().slice(0, 12));
@@ -98,6 +101,17 @@ export const Calc: FunctionComponent = () => {
         }
     };
 
+    const onSqrt = () => {
+        const value = Number(display)
+
+        if (value > 0) {
+            const result  = Math.sqrt(value)
+            setResult(result);
+            setDisplay(result.toString());
+            setWaitingForOperand(true);
+        } 
+    };
+
     const onEqualButtonClick = () => {
         const operand = Number(display);
 
@@ -163,6 +177,7 @@ export const Calc: FunctionComponent = () => {
                 onMemoryClearButtonClick={onMemoryClearButtonClick}
                 onMemoryPlusButtonClick={onMemoryPlusButtonClick}
                 onMemoryMinusButtonClick={onMemoryMinusButtonClick}
+                onSqrt={onSqrt}
             />
         </>
     )

@@ -3,13 +3,13 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import TableChartIcon from '@mui/icons-material/TableChart';
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
 import CropOriginalIcon from '@mui/icons-material/CropOriginal';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import CameraswitchIcon from '@mui/icons-material/Cameraswitch';
 import { Link } from 'react-router-dom';
 
 export const Sidebar = (
@@ -46,6 +46,18 @@ export const Sidebar = (
                 <ContentPasteIcon />
             </ListItemIcon>
             <ListItemText primary="Тест" />
+        </ListItemButton>
+        <ListItemButton component={Link} to="/city">
+            <ListItemIcon>
+                <LocationCityIcon />
+            </ListItemIcon>
+            <ListItemText primary="Города и памятники" />
+        </ListItemButton>
+        <ListItemButton component={Link} to="/change">
+            <ListItemIcon>
+                <CameraswitchIcon />
+            </ListItemIcon>
+            <ListItemText primary="Смена картинок" />
         </ListItemButton>
         </React.Fragment>
 );

@@ -29,6 +29,7 @@
 }
 
 .buttonCalc {
+    color: white;
     box-sizing: border-box;
     margin: 3px;
     width: 25%;
@@ -37,13 +38,13 @@
     min-height: 25%;
     font-weight: bold;
     font-size: 25px;
-    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 5px 5px 5px -5px rgba(255, 255, 255, 0.6);
     border: none;
 }
 
 .buttonCalc:hover {
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(237, 252, 24);
 }
 
 .indicatorList {

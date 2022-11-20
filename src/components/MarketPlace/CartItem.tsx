@@ -9,16 +9,14 @@ const Wrapper = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid lightblue;
   padding-bottom:20px;
-  div {
-    flex: 1;
-  }
   .information,
   .buttons {
     display: flex;
     justify-content: space-between;
   }
   img {
-    max-width: 80px;
+    max-width: 100px;
+    
     object-fit: cover;
     margin-left: 40px;
   }
@@ -32,19 +30,16 @@ type Props = {
 
 const CartItem: FunctionComponent<Props> = ({ item, addToCart, removeFromCart }) => (
     <Wrapper>
-        <div>
-            <h3>{item.title}</h3>
-            <div className="information">
-                <p>Цена: ₽{item.price}</p>
-                <p>Итого: ₽{(item.amount * item.price).toFixed(2)}</p>
-            </div>
-            <div className='buttons'>
-                <Button size='small' disableElevation variant='contained' onClick={() => removeFromCart(item.id)}>-</Button>
+      <img src={item.image} alt={item.title} />
+        <div style={{width:"1600px"}}>
+            
+            <h3>{item.title} - Цена: ₽{item.price} </h3>
+            <div style={{width:"200px", height:"50px"}} className='buttons'>
+                <Button  variant='contained' onClick={() => removeFromCart(item.id)}>-</Button>
                 <p>{item.amount}</p>
-                <Button size='small' disableElevation variant='contained' onClick={() => addToCart(item)}>+</Button>
-            </div>
+                <Button  variant='contained' onClick={() => addToCart(item)}>+</Button>
+            </div>          
         </div>
-        <img src={item.image} alt={item.title} />
     </Wrapper>
 );
 

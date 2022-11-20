@@ -3,11 +3,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from 'react-material-ui-carousel'
 
-const Images = ["https://adijuhpalace.ru/800/600/https/n1s1.elle.ru/e4/14/6b/e4146b309f701b7e040b31ca16f58157/1920x1200_0xc35dbb80_17119083041493282650.jpeg",
-    "https://www.travellinotour.com/assets/image/package/east_europe/1.jpg",
-    "https://russland-reisen.de/wp-content/uploads/2019/08/Premium-Reisen-Moskau-e1566306865487.jpg",
-    "https://www.mushroomtravel.com/page/wp-content/uploads/2018/10/pixabay-the-eiffel-tower-4104637_1920.jpg",
-    "http://albumarium.com/media/W1siZiIsIjU2NDcxYjc5NzY3MDczMzE3YzMxMTcwMCJdLFsicCIsInRodW1iIiwiMTkyMHgxOTIwXHUwMDNFIl1d?sha=933763c3"];
+const Images = ["https://phonoteka.org/uploads/posts/2021-05/1622166656_4-phonoteka_org-p-oboi-art-minimalizm-krasivo-4.jpg",
+    "https://kartinkin.net/uploads/posts/2021-07/1625791428_20-kartinkin-com-p-minimalistichnie-oboi-na-kompyuter-krasivi-22.jpg",
+    "https://i.pinimg.com/originals/19/d2/fb/19d2fbba84a58e6e7be43492ffc17b6e.jpg",
+    "https://get.wallhere.com/photo/minimalism-Desktopography-1712271.jpg",
+    "https://phonoteka.org/uploads/posts/2021-06/1624471367_17-phonoteka_org-p-oboi-minimalizm-priroda-krasivo-17.png"];
 const SlideShow = () => {
     return (
         <>

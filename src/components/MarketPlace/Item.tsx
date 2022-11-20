@@ -34,12 +34,8 @@ const Item: FunctionComponent<Props> = ({ item, handleAddToCart }) => (
         <img src={item.image} alt={item.title} />
         <div>
             <h3>{item.title}</h3>
-            <hr />
-            <p>{item.description}</p>
-            <hr />
-            <Button variant="outlined" onClick={() => handleAddToCart(item)}><CurrencyRubleIcon />{item.price}</Button>
         </div>
-        <Button variant="contained" onClick={() => handleAddToCart(item)}>Добавить в корзину</Button>
+        <Button variant="contained" onClick={() => handleAddToCart(item)}><CurrencyRubleIcon />{item.price}</Button>
     </Wrapper >
 );
 

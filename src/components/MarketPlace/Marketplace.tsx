@@ -56,12 +56,17 @@ const Marketplace = () => {
 
     return (
         <Wrapper>
-            <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
+            <Drawer anchor='top' open={cartOpen} onClose={() => setCartOpen(false)}>
                 <Cart
                     cartItems={cartItems}
                     addToCart={handleAddToCart}
                     removeFromCart={handleRemoveFromCart}
                 />
+            <IconButton style={{ color: '#000', backgroundColor: '#9dbffc', position: 'fixed', zIndex: 100, right: '50px', bottom: '50px' }} onClick={() => setCartOpen(false)} >
+                <Badge badgeContent={getTotalItems(cartItems)} color='error'>
+                    <AddShoppingCartIcon />
+                </Badge>
+            </IconButton>
             </Drawer>
             <IconButton style={{ color: '#000', backgroundColor: '#9dbffc', position: 'fixed', zIndex: 100, right: '50px', bottom: '50px' }} onClick={() => setCartOpen(true)} >
                 <Badge badgeContent={getTotalItems(cartItems)} color='error'>

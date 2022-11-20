@@ -18,7 +18,7 @@ const ChangePictures = () => {
                 }}
             >
                 <Toolbar />
-                <Container maxWidth="lg" sx={{ mt: 2, mb: 2 }}>
+                <Container maxWidth="xl" sx={{ mt: 2, mb: 2 }}>
                     <Paper sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
                         <Typography align="center" variant="h4">
                             Обмен рисунков

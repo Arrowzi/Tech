@@ -4,55 +4,49 @@ const Products = [
     {
         id: 0,
         category: "estate",
-        description: "Стандатный гараж на одно место, не слишком теплый, не слишком вместительный, но по соотношению цена-качество не имеет себе равных",
-        image: "https://delovoibiysk.ru/photo/c5644f1e1a9a50387c0e3dd8157cbaf1.jpg",
-        price: 50000,
-        title: "Железный гараж",
+        image: "https://www.techall.ru/image/cache/pimg/143953-1200x800.jpg",
+        price: 15000,
+        title: "Акустическая гитара",
         amount: 500
     },
     {
         id: 1,
         category: "estate",
-        description: "Одноместный кирпичный гараж с подогревом, отличная цена, из больших плюсов можно отметить то, что высота потолков составляет 3 метра",
-        image: "https://a.d-cd.net/16d7839s-1920.jpg",
-        price: 120000,
-        title: "Кирпичный гараж",
+        image: "https://cdn1.ozone.ru/s3/multimedia-w/6032402120.jpg",
+        price: 7000,
+        title: "Классическая гитара",
         amount: 500
     },
     {
         id: 2,
         category: "estate",
-        description: "Двухместный гараж с подогревом, простой, но в тоже время надежный гараж для семьи с несколькими авто",
-        image: "https://pro-dachnikov.com/uploads/posts/2021-10/1634419942_28-p-tsvet-garazha-snaruzhi-foto-28.jpg",
-        price: 170000,
-        title: "Гараж для двух авто",
+        image: "https://neopix.ru/upload/iblock/b5c/s4y5v9l7jabx29die8djeue2scvic1r2.jpg",
+        price: 55000,
+        title: "Барабанная устанока",
         amount: 500
     },
     {
         id: 3,
         category: "estate",
-        description: "Одноместный гараж из профнастила с подогревом, не слишком большая высота потолков, но все же достаточно места для авто и инструментов",
-        image: "https://mirstrojka.ru/wp-content/uploads/2018/03/Garazh-svoimi-rukami-43.jpg",
-        price: 100000,
-        title: "Профнастиловый гараж",
+        image: "https://shamray.ru/upload/catalog2/43923/list/1577563845.jpg",
+        price: 11500,
+        title: "Скрипка",
         amount: 500
     },
     {
         id: 4,
         category: "estate",
-        description: "Гараж в американском стиле. В одном из таких Стив Джобс начинал свою карьеру. Из плюсов можно выделить вместительность и подогрев гаража непосредственно от дома",
-        image: "https://pro-dachnikov.com/uploads/posts/2021-10/1634414360_4-p-amerikanskii-garazh-foto-5.jpg",
-        price: 250000,
-        title: "Американский гараж",
+        image: "https://big54.ru/upload/iblock/9d0/9d028a4ca764b09f2dcb1aff1ecb9b2e.jpg",
+        price: 40000,
+        title: "Синтезатор",
         amount: 500
     },
     {
         id: 5,
         category: "estate",
-        description: "Гараж в премиальном стиле, здесь есть все, что необходимо для комфортного пребывания авто и его владельца. Отопление, место для инструментов, а также подъемник",
-        image: "https://pro-dachnikov.com/uploads/posts/2021-10/1634243056_78-pro-dachnikov-com-p-bolshoi-garazh-foto-83.jpg",
-        price: 400000,
-        title: "Премиум гараж",
+        image: "https://www.muzfox.ru/upload/iblock/215/215fc78e42a199fe3e40b30fd859b047.jpg",
+        price: 120990,
+        title: "Аккордион",
         amount: 500
     }
 ];

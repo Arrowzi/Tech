@@ -45,13 +45,14 @@ const Monuments = () => {
                         label="Города"
                         onChange={handleChangeCity}
                     >
-                        <MenuItem value="dubai">Дубай</MenuItem>
+                        <MenuItem value="rim">Рим</MenuItem>
                         <MenuItem value="ufa">Уфа</MenuItem>
-                        <MenuItem value="new">Нью-Йорк</MenuItem>
+                        <MenuItem value="giza">Гиза</MenuItem>
                         <MenuItem value="ber">Берлин</MenuItem>
                         <MenuItem value="moscow">Москва</MenuItem>
                         <MenuItem value="par">Париж</MenuItem>
                         <MenuItem value="lon">Лондон</MenuItem>
+                        <MenuItem value="sid">Сидней</MenuItem>
                     </Select>
                 </FormControl>
                 <FormControl sx={{ m: 1, minWidth: 200 }}>
@@ -63,14 +64,14 @@ const Monuments = () => {
                         label="Монументы"
                         onChange={handleChangeMonument}
                     >
-                        <MenuItem value="ufa">Памятник Салавату Юлаеву</MenuItem>
-                        <MenuItem value="dubai">Бурдж Халифа</MenuItem>
-                        <MenuItem value="moscow">Мавзолей Ленина</MenuItem>
+                        <MenuItem value="ufa">Монумент дружбы</MenuItem>
+                        <MenuItem value="rim">Колизей</MenuItem>
+                        <MenuItem value="sid">Сиднейский оперный театр</MenuItem>
                         <MenuItem value="lon">Биг-Бен</MenuItem>
-                        <MenuItem value="new">Статуя Свободы</MenuItem>
+                        <MenuItem value="giza">Пирамида Хеопса</MenuItem>
                         <MenuItem value="moscow">Красная площадь</MenuItem>
                         <MenuItem value="ber">Бранденбургские ворота</MenuItem>
-                        <MenuItem value="par">Эйфелева башня</MenuItem>
+                        <MenuItem value="par">Лувр</MenuItem>
                     </Select>
                 </FormControl>
             </Box>
@@ -80,8 +81,8 @@ const Monuments = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Button onClick={handleResult} style={{ backgroundColor: '#435b76', margin: "5px" }} variant="contained" >Результат</Button>
-                <Button onClick={handleRefresh} style={{ backgroundColor: '#222d3b', margin: "5px" }} variant="contained" >Обновить</Button>
+                <Button onClick={handleResult} style={{ margin: "5px" }} variant="contained" >Результат</Button>
+                <Button onClick={handleRefresh} style={{ margin: "5px" }} variant="contained" >Обновить</Button>
             </Box>
 
         </>
